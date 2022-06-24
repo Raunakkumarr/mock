@@ -63,7 +63,7 @@
                         <!-- Quiz Page -->
                         <div id="main">
                             <div class="card-body">
-                                <h5 class="card-text font-weight-bold" id="question"></h5>
+                                <h5 class="card-text font-weight-bold" id="question" onmousedown="return false" onselect="return false"></h5>
                             </div>
                             <div class="col-md-12 p-4" id="options">
                                 <button class="text-left option mt-4" id="option1"></button>
@@ -182,8 +182,12 @@
             "q24": "",
             "q25": ""
         };
-        var timer;
+        var countdown;
         var countDownDate = new Date("June 25, 2022 09:00:00").getTime();
+
+        $(document).bind("contextmenu", function (e) {
+            return false;
+        });
 
         $(document).ready(function(){
             $('#finish').hide();
