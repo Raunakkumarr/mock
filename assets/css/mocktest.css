@@ -6,6 +6,8 @@
 .footer-section {
     background-color: rgba(54, 19, 18, 0.9);
     padding-top: 16px;
+    position: relative;
+    bottom: 0;
 }
 
 .footer-section h3 {
