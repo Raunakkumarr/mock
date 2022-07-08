@@ -74,7 +74,7 @@
 
 .mock-section{
     color: #fff;
-    height: auto;
+    /* height: auto; */
 }
 
 .start_page input{
