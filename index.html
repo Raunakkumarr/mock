@@ -33,7 +33,7 @@
     <main>
         <section class="mock-section">
             <div class="container mt-5">
-                <h5 id="total-time" class="card-text font-weight-bold">Total Time: (<span id="time_hr">01</span>: <span id="time_min">07</span>: <span
+                <h5 id="total-time" class="card-text font-weight-bold">Total Time: (<span id="time_hr">1</span>: <span id="time_min">7</span>: <span
                         id="time_sec">30</span>)</h5>
                 <!-- First Page -->
                 <div class="row mb-5 d-flex justify-content-center">
@@ -41,7 +41,7 @@
                         <div class="card-body">
                             <h5 class="card-text float-left font-weight-bold">Mocktest: <span>9<sup>th</sup> July,
                                     2022</span></h5>
-                            <h5 class="q-no">Q. No. <span id="number">0</span> of 50</h5>
+                            <h5 class="q-no">Q. No. <span id="number">0</span> of 75</h5>
                         </div>
                         <hr>
                         <div class="start_page">
@@ -298,7 +298,7 @@
             "q75": ""
         };
         var countdown;
-        var countDownDate = new Date("July 9, 2022 09:00:00").getTime();
+        var countDownDate = new Date("July 2, 2022 09:00:00").getTime();
 
         $(document).bind("contextmenu", function (e) {
             return false;
@@ -420,10 +420,12 @@
                         adding_Questions(data.Mocktest, count);
                     }
                 });
+                //console.log(selection);
                 $('#prev').show();
                 $('.option').removeClass("active");
                 buttons_manager();
                 selected_Answer();
+                console.log($('#qn' + count).val());
                 //result_storage();
                 //console.log(selection)
             });
@@ -483,7 +485,7 @@
             function buttons_manager() {
                 if (count > 0) {
                     $('#prev').show();
-                    if (count == 49) {
+                    if (count == 74) {
                         $('#next').hide();
                         $('#finish').show();
                     } else {
