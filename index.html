@@ -33,15 +33,15 @@
     <main>
         <section class="mock-section">
             <div class="container mt-5">
-                <h5 id="total-time" class="card-text font-weight-bold">Total Time: (<span id="time_hr">1</span>: <span id="time_min">7</span>: <span
-                        id="time_sec">30</span>)</h5>
+                <h5 id="total-time" class="card-text font-weight-bold">Total Time: (<span id="time_hr">1</span>: <span id="time_min">30</span>: <span
+                        id="time_sec">00</span>)</h5>
                 <!-- First Page -->
                 <div class="row mb-5 d-flex justify-content-center">
                     <div class="col-md-8 border p-4" id="mock-div">
                         <div class="card-body">
-                            <h5 class="card-text float-left font-weight-bold">Mocktest: <span>9<sup>th</sup> July,
+                            <h5 class="card-text float-left font-weight-bold">Mocktest: <span>16<sup>th</sup> July,
                                     2022</span></h5>
-                            <h5 class="q-no">Q. No. <span id="number">0</span> of 75</h5>
+                            <h5 class="q-no">Q. No. <span id="number">0</span> of 100</h5>
                         </div>
                         <hr>
                         <div class="start_page">
@@ -181,11 +181,36 @@
                 <input type="text" value="" name="q73" id="qn73">
                 <input type="text" value="" name="q74" id="qn74">
                 <input type="text" value="" name="q75" id="qn75">
+                <input type="text" value="" name="q76" id="qn76">
+                <input type="text" value="" name="q77" id="qn77">
+                <input type="text" value="" name="q78" id="qn78">
+                <input type="text" value="" name="q79" id="qn79">
+                <input type="text" value="" name="q80" id="qn80">
+                <input type="text" value="" name="q81" id="qn81">
+                <input type="text" value="" name="q82" id="qn82">
+                <input type="text" value="" name="q83" id="qn83">
+                <input type="text" value="" name="q84" id="qn84">
+                <input type="text" value="" name="q85" id="qn85">
+                <input type="text" value="" name="q86" id="qn86">
+                <input type="text" value="" name="q87" id="qn87">
+                <input type="text" value="" name="q88" id="qn88">
+                <input type="text" value="" name="q89" id="qn89">
+                <input type="text" value="" name="q90" id="qn90">
+                <input type="text" value="" name="q91" id="qn91">
+                <input type="text" value="" name="q92" id="qn92">
+                <input type="text" value="" name="q93" id="qn93">
+                <input type="text" value="" name="q94" id="qn94">
+                <input type="text" value="" name="q95" id="qn95">
+                <input type="text" value="" name="q96" id="qn96">
+                <input type="text" value="" name="q97" id="qn97">
+                <input type="text" value="" name="q98" id="qn98">
+                <input type="text" value="" name="q99" id="qn99">
+                <input type="text" value="" name="q100" id="qn100">
                 <input type="text" value="" name="score" id="score">
             </form>
         </section>
         <section id="countdown-timer">
-            <h3>The test will start sharp at 9 A.M., 9<sup>th</sup> July, 2022.</h3>
+            <h3>The test will start sharp at 9 A.M., 16<sup>th</sup> July, 2022.</h3>
             <h5>Remaining Time:</h5>
             <h5 id="remaining-countdown"></h5>
         </section>
@@ -295,10 +320,35 @@
             "q72": "",
             "q73": "",
             "q74": "",
-            "q75": ""
+            "q75": "",
+            "q76": "",
+            "q77": "",
+            "q78": "",
+            "q79": "",
+            "q80": "",
+            "q81": "",
+            "q82": "",
+            "q83": "",
+            "q84": "",
+            "q85": "",
+            "q86": "",
+            "q87": "",
+            "q88": "",
+            "q89": "",
+            "q90": "",
+            "q91": "",
+            "q92": "",
+            "q93": "",
+            "q94": "",
+            "q95": "",
+            "q96": "",
+            "q97": "",
+            "q98": "",
+            "q99": "",
+            "q100": ""
         };
         var countdown;
-        var countDownDate = new Date("July 2, 2022 09:00:00").getTime();
+        var countDownDate = new Date("July 16, 2022 09:00:00").getTime();
 
         $(document).bind("contextmenu", function (e) {
             return false;
@@ -354,7 +404,7 @@
                         beforeSend: function (request) {
                             request.setRequestHeader("Security-key", "1945");
                         },
-                        url: "https://json.extendsclass.com/bin/5b3a169d7d7a",
+                        url: "https://json.extendsclass.com/bin/69064455c652",
                         success: function (data) {
                             adding_Questions(data.Mocktest, count);
                         }
@@ -370,7 +420,7 @@
                     //console.log($('#e_phone').val());
 
                     var start_time = new Date().getTime();
-                    var t_time = start_time + 4050000;
+                    var t_time = start_time + 5400000;
                     var countdown = setInterval(function () {
                         var now_time = new Date().getTime();
 
@@ -415,7 +465,7 @@
                     beforeSend: function (request) {
                         request.setRequestHeader("Security-key", "1945");
                     },
-                    url: "https://json.extendsclass.com/bin/5b3a169d7d7a",
+                    url: "https://json.extendsclass.com/bin/69064455c652",
                     success: function (data) {
                         adding_Questions(data.Mocktest, count);
                     }
@@ -438,7 +488,7 @@
                     beforeSend: function (request) {
                         request.setRequestHeader("Security-key", "1945");
                     },
-                    url: "https://json.extendsclass.com/bin/5b3a169d7d7a",
+                    url: "https://json.extendsclass.com/bin/69064455c652",
                     success: function (data) {
                         adding_Questions(data.Mocktest, count);
                     }
@@ -464,7 +514,7 @@
                     beforeSend: function (request) {
                         request.setRequestHeader("Security-key", "1945");
                     },
-                    url: "https://json.extendsclass.com/bin/5b3a169d7d7a",
+                    url: "https://json.extendsclass.com/bin/69064455c652",
                     success: function (data) {
                         for (var b = 0; b < 25; b++) {
                             c = b + 1;
@@ -485,7 +535,7 @@
             function buttons_manager() {
                 if (count > 0) {
                     $('#prev').show();
-                    if (count == 74) {
+                    if (count == 99) {
                         $('#next').hide();
                         $('#finish').show();
                     } else {
