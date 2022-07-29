@@ -39,7 +39,7 @@
                 <div class="row mb-5 d-flex justify-content-center">
                     <div class="col-md-8 border p-4" id="mock-div">
                         <div class="card-body">
-                            <h5 class="card-text float-left font-weight-bold">Mocktest: <span>23<sup>rd</sup> July,
+                            <h5 class="card-text float-left font-weight-bold">Mocktest: <span>31<sup>st</sup> July,
                                     2022</span></h5>
                             <h5 class="q-no">Q. No. <span id="number">0</span> of 100</h5>
                         </div>
@@ -47,7 +47,7 @@
                         <div class="start_page">
                             <h3 class="text-center test-title mb-3">CMAT MockTest</h3>
                             <p>You will get 1 point for each correct answer.<br> You'll have to attempt 100 questions, 25
-                                each of <span class="subject">GK, IQ, English and Maths</span> in a total of 1 hour and 30 minutes.</p>
+                                each of <span class="subject">GK, IQ, English and Maths</span> in a total of 90 minutes.</p>
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -210,7 +210,7 @@
             </form>
         </section>
         <section id="countdown-timer">
-            <h3>The test will start sharp at 9 A.M., 23<sup>rd</sup> July, 2022.</h3>
+            <h3>The test will start sharp at 9 A.M., 31<sup>st</sup> July, 2022.</h3>
             <h5>Remaining Time:</h5>
             <h5 id="remaining-countdown"></h5>
         </section>
@@ -348,7 +348,7 @@
             "q100": ""
         };
         var countdown;
-        var countDownDate = new Date("July 23, 2022 09:00:00").getTime();
+        var countDownDate = new Date("July 31, 2022 09:00:00").getTime();
 
         $(document).bind("contextmenu", function (e) {
             return false;
@@ -404,7 +404,7 @@
                         beforeSend: function (request) {
                             request.setRequestHeader("Security-key", "1945");
                         },
-                        url: "https://json.extendsclass.com/bin/63ed65fb72a4",
+                        url: "https://json.extendsclass.com/bin/b0aadc980cdb",
                         success: function (data) {
                             adding_Questions(data.Mocktest, count);
                         }
@@ -465,7 +465,7 @@
                     beforeSend: function (request) {
                         request.setRequestHeader("Security-key", "1945");
                     },
-                    url: "https://json.extendsclass.com/bin/63ed65fb72a4",
+                    url: "https://json.extendsclass.com/bin/b0aadc980cdb",
                     success: function (data) {
                         adding_Questions(data.Mocktest, count);
                     }
@@ -488,7 +488,7 @@
                     beforeSend: function (request) {
                         request.setRequestHeader("Security-key", "1945");
                     },
-                    url: "https://json.extendsclass.com/bin/63ed65fb72a4",
+                    url: "https://json.extendsclass.com/bin/b0aadc980cdb",
                     success: function (data) {
                         adding_Questions(data.Mocktest, count);
                     }
@@ -514,7 +514,7 @@
                     beforeSend: function (request) {
                         request.setRequestHeader("Security-key", "1945");
                     },
-                    url: "https://json.extendsclass.com/bin/63ed65fb72a4",
+                    url: "https://json.extendsclass.com/bin/b0aadc980cdb",
                     success: function (data) {
                         for (var b = 0; b < 25; b++) {
                             c = b + 1;
@@ -548,7 +548,7 @@
 
             //Adding Questions Function
             function adding_Questions(data, i) {
-                $('#question').text(data[i].Question);
+                $('#question').text(data[i].Questions);
                 $('#option1').text(data[i].option1);
                 $('#option2').text(data[i].option2);
                 $('#option3').text(data[i].option3);
@@ -580,6 +580,7 @@
                 $("#correct-answer").text(marks*4 + "%")
             } */
         });
+        /* b2e29f302f26, 7aa9706aba7e */
     </script>
 </body>
 </html>
